@@ -1,14 +1,12 @@
 version: 2
 
 sources:
-  - name: airbnb
+  - name: raw
+    database: dbt_db
     schema: raw
     tables:
-      - name: listings
-        identifier: raw_listings
+      - name: employee_details
+      - name: emp_day1_data
+      - name: item
+      - name: store
 
-      - name: hosts
-        identifier: raw_hosts
-
-      - name: reviews
-        identifier: raw_reviews
