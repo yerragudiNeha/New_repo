@@ -37,9 +37,4 @@ models:
   partner_connect_trial:
     # Applies to all files under models folder
     +materialized: view
-    src:
-      +materialized: ephemeral
-    dim:
-      +materialized: view
-    fct:
-      +materialized: table
+  
