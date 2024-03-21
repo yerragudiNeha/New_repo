@@ -19,3 +19,15 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: store_hook
+      description: "An example model of store"
+      columns:
+      - name: s_store_id
+        tests:
+          - unique
+          - not_null 
+      - name: s_market_id
+        tests:
+          - relationships:
+              to: ref('store_hook')
+              field: id

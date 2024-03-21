@@ -1,9 +1,14 @@
 version: 2
 
 sources:
-  - name: stripe
-    database: raw
-    schema: stripe
+  - name: raw
+    database: dbt_db
+    schema: raw
     tables:
-      - name: payment
-      - name: mock_orders
+      - name: employee_details
+      - name: emp_day1_data
+      - name: item
+      - name: store
+
+
+
